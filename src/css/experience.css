@@ -1,0 +1,11 @@
+.experience__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.01);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 0, 0, 0.095);
+  border-radius: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.098);
+}

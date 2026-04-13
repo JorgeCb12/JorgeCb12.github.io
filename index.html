@@ -1,15 +1,237 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/src/css/index.css" />
+    <link rel="stylesheet" href="/src/css/header.css" />
+    <link rel="stylesheet" href="/src/css/hero.css" />
+    <link rel="stylesheet" href="/src/css/about.css" />
+    <link rel="stylesheet" href="/src/css/skills.css" />
+    <link rel="stylesheet" href="src/css/experience.css" />
+    <link rel="stylesheet" href="src/css/contact.css" />
     <link
       rel="shortcut icon"
-      href="/public/img/favicon.svg"
+      href="/assets/img/favicon.svg"
       type="image/x-icon"
     />
     <title>Portafolio | Jorgecb</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="logo">
+          <img src="/assets/img/logoJorge.png" alt="Personal logo" />
+        </div>
+        <nav class="navbar" aria-label="Menú principal">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">Inicio</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">Sobre mí</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">Habilidades </a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">Experiencia</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="cta__button">
+          <a href="/src/views/mascotas.html"
+            >View Pets
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="bg-glows" aria-hidden="true">
+        <div class="glow glow--1"></div>
+        <div class="glow glow--2"></div>
+      </div>
+      <section class="hero__container">
+        <article class="hero__info">
+          <p class="hero__info__name">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.8"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+              />
+            </svg>
+            JORGE CORRALES B.
+          </p>
+          <h2><span class="badge-tech">I'm</span> a Frontend Developer</h2>
+          <p class="hero__info__description">
+            Desarrollador Frontend enfocado en construir interfaces modernas,
+            rápidas y visualmente atractivas. Trabajo con React, Vite y
+            TailwindCSS, integrando APIs REST y aplicando buenas prácticas para
+            desarrollar experiencias web eficientes, escalables y centradas en
+            el usuario.
+          </p>
+          <div class="btn__cta">
+            <button class="btn__cta__dowloand">
+              Descargar cv
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+            </button>
+            <button class="btn__cta__contact">
+              Contactame
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </article>
+        <article class="hero__img">
+          <img src="/assets/img/FotoPerfil.webp" alt="" />
+        </article>
+      </section>
+      <section class="about__container">
+        <h2>SOBRE MÍ</h2>
+        <article class="about__text">
+          <p>
+            Soy estudiante de Ingeniería en Sistemas y desarrollador frontend en
+            formación. Me apasiona crear interfaces limpias, funcionales y bien
+            estructuradas, combinando diseño y código eficiente. Actualmente
+            manejo HTML, CSS y JavaScript, y estoy profundizando en React con
+            TypeScript. También tengo conocimientos en Java y PHP, lo que me
+            ayuda a entender mejor la lógica del desarrollo web completo. He
+            trabajado en proyectos personales y prácticas donde he fortalecido
+            mis habilidades en desarrollo web, Git y soporte técnico. Mi
+            objetivo es seguir creciendo como desarrollador y construir
+            soluciones de calidad.
+          </p>
+        </article>
+        <article class="about__main__list">
+          <ul class="about__list">
+            <li class="about__list__item">Desarrollo web</li>
+            <li class="about__list__item">Interfaces modernas (UI/UX)</li>
+            <li class="about__list__item">Tecnología y software</li>
+            <li class="about__list__item">Automatización de procesos</li>
+            <li class="about__list__item">Aprendizaje de nuevas tecnologías</li>
+          </ul>
+        </article>
+      </section>
+      <section class="skills__container">
+        <article class="skills">
+          <h2>Skills</h2>
+          <ul>
+            <li>Lenguajes: JavaScript (ES6+), TypeScript</li>
+            <li>Frontend: React, Vite, TailwindCSS, HTML5, CSS3</li>
+            <li>Herramientas: Git, GitHub</li>
+            <li>Bases de datos: MySQL (nivel básico)</li>
+          </ul>
+        </article>
+      </section>
+      <section class="experience__container">
+        DESARROLLADOR FRONTEND FREELANCE - PROYECTOS PERSONALES May 2025 -
+        Presente Proyecto MovieFlix: Desarrollé un buscador de películas
+        consumiendo APIs REST, implementando filtros de búsqueda, gestión de
+        favoritos con LocalStorage y diseño responsivo. Portafolio Personal:
+        Diseñé una interfaz inmersiva aplicando Glassmorphism y Bento Grid,
+        mejorando la experiencia de usuario (UX/UI) y el rendimiento en móviles.
+        <br />
+        DESARROLLADOR FRONTEND - PRACTICANTE | SOLUCIONES AMERICANA Nov 2024 -
+        May 2025 Desarrollé una asistente virtual interactiva integrando APIs
+        REST, mejorando la atención al usuario. Diseñé interfaces responsivas y
+        modulares utilizando React y Vite, asegurando compatibilidad móvil al
+        100%. Optimicé el rendimiento de la aplicación reduciendo tiempos de
+        carga mediante buenas prácticas de código en JavaScript/TypeScript.
+        <br />
+        SOPORTE TÉCNICO | SYSTEM CENTER Resolución de problemas técnicos de
+        usuarios finales (Hardware/Software). Instalación, mantenimiento y
+        configuración de equipos de cómputo. Gestión de usuarios y credenciales
+        en sistemas internos
+      </section>
+      <section class="contact__container">
+        <h2>Contact</h2>
+        <form action="#" method="post">
+          <label for="nombre">Nombre:</label><br />
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Ingresa tu nombre"
+            required
+          /><br /><br />
+
+          <label for="correo">Correo:</label><br />
+          <input
+            type="email"
+            id="correo"
+            name="correo"
+            placeholder="Ingresa tu correo"
+            required
+          /><br /><br />
+
+          <label for="mensaje">Mensaje:</label><br />
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            placeholder="Escribe tu mensaje"
+            required
+          ></textarea
+          ><br /><br />
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>

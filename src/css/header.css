@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1000px;
+  max-width: 1050px;
   margin: 0 auto;
   padding: 0.5rem 1rem;
   background: rgba(0, 0, 0, 0.6);
@@ -42,15 +42,29 @@
   padding: 0 0.4rem;
 }
 .navbar__link {
+  position: relative;
   text-decoration: none;
   color: var(--color-primary);
   transition: 0.3s;
   font-size: 0.9rem;
+  font-weight: 400;
 }
-.navbar__link:hover {
-  color: var(--color-secondary);
-  border-bottom: 2px solid rgba(193, 255, 114, 0.6);
+
+.navbar__link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: #c1ff72;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
 }
+.navbar__link:hover::after {
+  width: 100%;
+}
+
 .cta__button a {
   display: inline-flex;
   align-items: center;

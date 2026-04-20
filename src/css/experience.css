@@ -1,11 +1,113 @@
 .experience__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
-  background: rgba(0, 0, 0, 0.01);
+  padding: 4rem 1rem;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.01);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(0, 0, 0, 0.095);
+  border: 1px solid rgba(255, 255, 255, 0.095);
   border-radius: 2rem;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.098);
+}
+
+.experience {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem 3rem;
+  align-items: stretch;
+  grid-auto-rows: 1fr;
+}
+.experience__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  background: linear-gradient(
+    135deg,
+    #c1ff7230 0%,
+    #eaffc740 40%,
+    #ffffff20 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.experience__text__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+.experience__text__title h3 {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  color: var(--color-secondary);
+
+  text-align: left;
+}
+.experience__text__title svg {
+  width: 1.8rem;
+  color: #fff;
+}
+.experience__text__title span {
+  font-size: 0.8rem;
+  color: #eee;
+  font-style: italic;
+  background: rgba(193, 255, 114, 0.1);
+  width: fit-content;
+  padding: 0.2rem 1rem;
+  border-radius: 50px;
+  border: 1px solid rgba(193, 255, 114, 0.2);
+}
+
+.experience__text__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  text-align: justify;
+
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.experience__text__description svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  color: var(--color-secondary);
+  margin-top: 0.1rem;
+}
+.experience__text__description p {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: #ccc;
+  line-height: 1.4;
+}
+
+.experience__text__list {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+.experience__text__list li {
+  font-size: 0.7rem;
+  background: rgba(255, 255, 255, 0.095);
+  padding: 0.2rem 0.8rem;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }

@@ -3,27 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FUENTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
-
+    <!-- ARCHIVOS DE ESTILOS -->
     <link rel="stylesheet" href="/src/css/index.css" />
     <link rel="stylesheet" href="/src/css/header.css" />
     <link rel="stylesheet" href="/src/css/hero.css" />
     <link rel="stylesheet" href="/src/css/about.css" />
     <link rel="stylesheet" href="/src/css/skills.css" />
-    <link rel="stylesheet" href="src/css/experience.css" />
-    <link rel="stylesheet" href="src/css/contact.css" />
+    <link rel="stylesheet" href="/src/css/experience.css" />
+    <link rel="stylesheet" href="/src/css/contact.css" />
+    <link rel="stylesheet" href="/src/css/projects.css" />
+    <!-- ICONOS -->
     <link
       rel="shortcut icon"
       href="/assets/img/favicon.svg"
@@ -32,6 +33,7 @@
     <title>Portafolio | Jorgecb</title>
   </head>
   <body>
+    <!-- SECCION HEADER -->
     <header class="header">
       <div class="header__container">
         <div class="logo">
@@ -74,10 +76,15 @@
         </div>
       </div>
     </header>
+    <!-- SECCION PRINCIPAL -->
     <main>
+      <!-- FONDO CON EFECTO DE PARTICULAS -->
       <div class="bg-glows" aria-hidden="true">
         <div id="tsparticles"></div>
       </div>
+      <!-- -------------- -->
+
+      <!-- SECCION HERO -->
       <section class="hero__container">
         <article class="hero__info">
           <p class="hero__info__name">
@@ -181,193 +188,602 @@
           </div>
         </article>
       </section>
-      <section class="about__container">
-        <section class="about__container__text">
-          <article class="about__text">
-            <h2>SOBRE MÍ</h2>
-            <p>
-              Soy una persona enfocada en el detalle y en hacer las cosas bien
-              desde la base. Me gusta entender cómo funciona cada parte antes de
-              construir, lo que me permite escribir código más limpio y
-              estructurado.
-            </p>
-            <br />
-            <p>
-              Disfruto tanto desarrollar como explicar, ya que constantemente
-              apoyo a otros compañeros, lo que ha fortalecido mi capacidad de
-              comunicación y mi comprensión técnica.
-            </p>
-            <br />
-            <p>
-              Me interesa no solo que una interfaz funcione, sino que sea clara,
-              intuitiva y bien pensada. Siempre busco mejorar, aprender nuevas
-              herramientas y aplicar buenas prácticas en cada proyecto. Mi
-              objetivo es crecer como desarrollador frontend y construir
-              soluciones que realmente aporten valor.
-            </p>
-          </article>
-          <article class="about__main__list">
-            <ul class="about__list">
-              <li class="about__list__item">
-                Desarrollo web
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M14.25 9.75 16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z"
-                  />
-                </svg>
-              </li>
-              <li class="about__list__item">
-                Diseño UI/UX
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"
-                  />
-                </svg>
-              </li>
-              <li class="about__list__item">
-                Tecnología y software
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z"
-                  />
-                </svg>
-              </li>
+      <!-- FIN SECCIÓN HERO -->
+
+      <section class="separator">
+        <!-- SECCION SOBRE MÍ -->
+        <section class="about__container">
+          <section class="about__container__text">
+            <article class="about__text">
+              <h2>SOBRE MÍ</h2>
+              <p>
+                Soy una persona enfocada en el detalle y en hacer las cosas bien
+                desde la base. Me gusta entender cómo funciona cada parte antes
+                de construir, lo que me permites
+                <span class="highlighted">escribir código más limpio</span> y
+                estructurado.
+              </p>
+              <br />
+              <p>
+                Disfruto tanto desarrollar como explicar, ya que constantemente
+                apoyo a otros compañeros, lo que ha fortalecido mi capacidad de
+                <span class="highlighted">comunicación</span> y mi comprensión
+                técnica.
+              </p>
+              <br />
+              <p>
+                Me interesa no solo que una interfaz funcione, sino que sea
+                clara, intuitiva y bien pensada. Siempre busco mejorar, aprender
+                nuevas herramientas y aplicar
+                <span class="highlighted">buenas prácticas</span> en cada
+                proyecto. Mi objetivo es crecer como
+                <span class="highlighted">desarrollador frontend</span> y
+                construir soluciones que realmente aporten valor.
+              </p>
+            </article>
+            <article class="about__main__list">
+              <ul class="about__list">
+                <li class="about__list__item">
+                  Desarrollo web
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M14.25 9.75 16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z"
+                    />
+                  </svg>
+                </li>
+                <li class="about__list__item">
+                  Diseño UI/UX
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"
+                    />
+                  </svg>
+                </li>
+                <li class="about__list__item">
+                  Tecnología y software
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z"
+                    />
+                  </svg>
+                </li>
+              </ul>
+            </article>
+          </section>
+          <section class="skills__container">
+            <h2>Habilidades Tecnicas</h2>
+            <ul class="skills__container__list">
+              <span>LENGUAJES</span>
+              <div class="category">
+                <li class="skills__item skills__item--js">
+                  <i class="devicon-javascript-plain colored"></i>JavaScript
+                </li>
+                <li class="skills__item skills__item--ts">
+                  <i class="devicon-typescript-plain colored"></i>TypeScript
+                </li>
+              </div>
+
+              <span>FRONT-END</span>
+              <div class="category">
+                <li class="skills__item skills__item--html">
+                  <i class="devicon-html5-plain colored"></i>HTML5
+                </li>
+                <li class="skills__item skills__item--css">
+                  <i class="devicon-css3-plain colored"></i>CSS3
+                </li>
+                <li class="skills__item skills__item--react">
+                  <i class="devicon-react-original colored"></i>React
+                </li>
+                <li class="skills__item skills__item--tailwind">
+                  <i class="devicon-tailwindcss-original colored"></i>Tailwind
+                </li>
+              </div>
+
+              <span>HERRAMIENTAS</span>
+              <div class="category">
+                <li class="skills__item skills__item--vite">
+                  <i class="devicon-vitejs-plain colored"></i>Vite.js
+                </li>
+                <li class="skills__item skills__item--git">
+                  <i class="devicon-git-plain colored"></i>Git
+                </li>
+                <li class="skills__item skills__item--github">
+                  <i class="devicon-github-original"></i>GitHub
+                </li>
+                <li class="skills__item skills__item--pnpm">
+                  <i class="devicon-pnpm-plain colored"></i>pnpm
+                </li>
+              </div>
+
+              <span>DISEÑO</span>
+              <div class="category">
+                <li class="skills__item skills__item--canva">
+                  <i class="devicon-canva-original colored"></i>Canva
+                </li>
+                <li class="skills__item skills__item--figma">
+                  <i class="devicon-figma-plain colored"></i>Figma
+                </li>
+              </div>
+
+              <span>BACK-END</span>
+              <div class="category">
+                <li class="skills__item skills__item--nodejs">
+                  <i class="devicon-nodejs-plain"></i>Node.js
+                </li>
+                <li class="skills__item skills__item--mysql">
+                  <i class="devicon-mysql-original colored"></i>MySQL
+                </li>
+              </div>
             </ul>
-          </article>
+          </section>
         </section>
-        <section class="skills__container">
-          <h2>Tecnologías</h2>
-          <ul class="skills__container__list">
-            <li class="skills__item skills__item--js">
-              <i class="devicon-javascript-plain colored"></i>JavaScript
-            </li>
-            <li class="skills__item skills__item--ts">
-              <i class="devicon-typescript-plain colored"></i>TypeScript
-            </li>
-            <li class="skills__item skills__item--html">
-              <i class="devicon-html5-plain colored"></i>HTML5
-            </li>
-            <li class="skills__item skills__item--css">
-              <i class="devicon-css3-plain colored"></i>CSS3
-            </li>
-            <li class="skills__item skills__item--react">
-              <i class="devicon-react-original colored"></i>React
-            </li>
-            <li class="skills__item skills__item--tailwind">
-              <i class="devicon-tailwindcss-original colored"></i>Tailwind
-            </li>
-            <li class="skills__item skills__item--vite">
-              <i class="devicon-vitejs-plain colored"></i>Vite.js
-            </li>
-            <li class="skills__item skills__item--git">
-              <i class="devicon-git-plain colored"></i>Git
-            </li>
-            <li class="skills__item skills__item--github">
-              <i class="devicon-github-original"></i>GitHub
-            </li>
-            <li class="skills__item skills__item--pnpm">
-              <i class="devicon-pnpm-plain colored"></i>pnpm
-            </li>
-            <li class="skills__item skills__item--canva">
-              <i class="devicon-canva-original colored"></i>Canva
-            </li>
-            <li class="skills__item skills__item--figma">
-              <i class="devicon-figma-plain colored"></i>Figma
-            </li>
-            <li class="skills__item skills__item--nodejs">
-              <i class="devicon-nodejs-plain"></i>Node.js
-            </li>
-            <li class="skills__item skills__item--mysql">
-              <i class="devicon-mysql-original colored"></i>MySQL
-            </li>
-            <li class="skills__item skills__item--materialui">
-              <i class="devicon-materialui-plain colored"></i>MaterialUI
-            </li>
-          </ul>
+        <!-- FIN SECCION SOBRE MÍ -->
+
+        <!-- SECCION EXPERIENCIA -->
+        <section class="experience__container">
+          <h2>EXPERIENCIA</h2>
+          <section class="experience">
+            <article class="experience__text">
+              <div class="experience__text__title">
+                <h3>
+                  FRONTEND - SOLUCIONES AMERICANA
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25"
+                    />
+                  </svg>
+                </h3>
+                <span> Nov 2024 - May 2025</span>
+              </div>
+              <div class="experience__text__description">
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  Desarrollé una asistente virtual interactiva integrando APIs
+                  REST, mejorando la atención al usuario.
+                </p>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  Diseñé interfaces responsivas y modulares utilizando React y
+                  Vite, asegurando compatibilidad móvil al 100%.
+                </p>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  Optimicé el rendimiento de la aplicación reduciendo tiempos de
+                  carga mediante buenas prácticas de código en
+                  JavaScript/TypeScript.
+                </p>
+              </div>
+              <ul class="experience__text__list">
+                <li>React</li>
+                <li>Tailwind</li>
+                <li>Material UI</li>
+                <li>Bitbucket</li>
+              </ul>
+            </article>
+            <article class="experience__text">
+              <div class="experience__text__title">
+                <h3>
+                  SOPORTE TÉCNICO - SYSTEM CENTER
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z"
+                    />
+                  </svg>
+                </h3>
+                <span>Ago 2022 - Feb 2023</span>
+              </div>
+              <div class="experience__text__description">
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  Resolución de problemas técnicos de usuarios finales
+                  (Hardware/Software).
+                </p>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  Instalación, mantenimiento y configuración de equipos de
+                  cómputo, sistemas operativos y aplicaciones.
+                </p>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  Gestión de usuarios y credenciales en sistemas internos,
+                  control de accesos, restablecimiento de contraseñas y soporte
+                  en herramientas corporativas.
+                </p>
+              </div>
+              <ul class="experience__text__list">
+                <li>Hardware</li>
+                <li>Software</li>
+                <li>Soporte</li>
+                <li>Mantenimiento</li>
+              </ul>
+            </article>
+          </section>
+        </section>
+        <!-- FIN SECCION EXPERIENCIA -->
+
+        <section class="project__container">
+          <h2>Proyectos</h2>
+          <div class="project__list">
+            <article class="project__item project__item">
+              <div class="img__container">
+                <img src="/assets/img/portfolioImg.webp" alt="Proyecto 1" />
+              </div>
+              <h3>Portafolio Jorgecb</h3>
+              <p>
+                Descripción breve del proyecto, tecnologías utilizadas y
+                resultados obtenidos.
+              </p>
+              <ul class="project__link">
+                <li>
+                  <a href="#">
+                    <img src="/assets/img/Github.svg" alt="GitHub" />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </article>
+            <article class="project__item">
+              <div class="img__container">
+                <img src="/assets/img/invoiceFlow.webp" alt="Proyecto 2" />
+              </div>
+              <h3>InvoiceFlow SaaS</h3>
+              <p>
+                Descripción breve del proyecto, tecnologías utilizadas y
+                resultados obtenidos.
+              </p>
+              <ul class="project__link">
+                <li>
+                  <a href="#">
+                    <img src="/assets/img/Github.svg" alt="GitHub" />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </article>
+            <article class="project__item">
+              <div class="img__container">
+                <img src="/assets/img/dashboard.webp" alt="Proyecto 3" />
+              </div>
+              <h3>Sass Freelance</h3>
+              <p>
+                Descripción breve del proyecto, tecnologías utilizadas y
+                resultados obtenidos.
+              </p>
+              <ul class="project__link">
+                <li>
+                  <a href="#">
+                    <img src="/assets/img/Github.svg" alt="GitHub" />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </article>
+            <article class="project__item">
+              <div class="img__container">
+                <img src="/assets/img/TaskManagerApp.webp" alt="Proyecto 3" />
+              </div>
+              <h3>Task Manager App</h3>
+              <p>
+                Descripción breve del proyecto, tecnologías utilizadas y
+                resultados obtenidos.
+              </p>
+              <ul class="project__link">
+                <li>
+                  <a href="#">
+                    <img src="/assets/img/Github.svg" alt="GitHub" />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </article>
+            <article class="project__item">
+              <div class="img__container">
+                <img src="/assets/img/WeatherDashboard.webp" alt="Proyecto 3" />
+              </div>
+              <h3>Weather Dashboard</h3>
+              <p>
+                Descripción breve del proyecto, tecnologías utilizadas y
+                resultados obtenidos.
+              </p>
+              <ul class="project__link">
+                <li>
+                  <a href="#">
+                    <img src="/assets/img/Github.svg" alt="GitHub" />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </article>
+            <article class="project__item">
+              <div class="img__container">
+                <img src="/assets/img/calculatorApp.webp" alt="Proyecto 3" />
+              </div>
+              <h3>calculator App</h3>
+              <p>
+                Descripción breve del proyecto, tecnologías utilizadas y
+                resultados obtenidos.
+              </p>
+              <ul class="project__link">
+                <li>
+                  <a href="#">
+                    <img src="/assets/img/Github.svg" alt="GitHub" />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <!-- SECCION CONTACTO -->
+        <section class="contact__container">
+          <h2>Contacto</h2>
+          <form action="#" method="post">
+            <label for="nombre">Nombre:</label><br />
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingresa tu nombre"
+              required
+            /><br /><br />
+
+            <label for="correo">Correo:</label><br />
+            <input
+              type="email"
+              id="correo"
+              name="correo"
+              placeholder="Ingresa tu correo"
+              required
+            /><br /><br />
+
+            <label for="mensaje">Mensaje:</label><br />
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              placeholder="Escribe tu mensaje"
+              required
+            ></textarea
+            ><br /><br />
+            <button type="submit">Enviar</button>
+          </form>
         </section>
       </section>
-
-      <section class="experience__container">
-        DESARROLLADOR FRONTEND FREELANCE - PROYECTOS PERSONALES May 2025 -
-        Presente Proyecto MovieFlix: Desarrollé un buscador de películas
-        consumiendo APIs REST, implementando filtros de búsqueda, gestión de
-        favoritos con LocalStorage y diseño responsivo. Portafolio Personal:
-        Diseñé una interfaz inmersiva aplicando Glassmorphism y Bento Grid,
-        mejorando la experiencia de usuario (UX/UI) y el rendimiento en móviles.
-        <br />
-        DESARROLLADOR FRONTEND - PRACTICANTE | SOLUCIONES AMERICANA Nov 2024 -
-        May 2025 Desarrollé una asistente virtual interactiva integrando APIs
-        REST, mejorando la atención al usuario. Diseñé interfaces responsivas y
-        modulares utilizando React y Vite, asegurando compatibilidad móvil al
-        100%. Optimicé el rendimiento de la aplicación reduciendo tiempos de
-        carga mediante buenas prácticas de código en JavaScript/TypeScript.
-        <br />
-        SOPORTE TÉCNICO | SYSTEM CENTER Resolución de problemas técnicos de
-        usuarios finales (Hardware/Software). Instalación, mantenimiento y
-        configuración de equipos de cómputo. Gestión de usuarios y credenciales
-        en sistemas internos
-      </section>
-      <section class="contact__container">
-        <h2>Contact</h2>
-        <form action="#" method="post">
-          <label for="nombre">Nombre:</label><br />
-          <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            placeholder="Ingresa tu nombre"
-            required
-          /><br /><br />
-
-          <label for="correo">Correo:</label><br />
-          <input
-            type="email"
-            id="correo"
-            name="correo"
-            placeholder="Ingresa tu correo"
-            required
-          /><br /><br />
-
-          <label for="mensaje">Mensaje:</label><br />
-          <textarea
-            id="mensaje"
-            name="mensaje"
-            placeholder="Escribe tu mensaje"
-            required
-          ></textarea
-          ><br /><br />
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
+      <!-- FIN SECCION CONTACTO -->
     </main>
 
+    <!-- SECCION PARTICULAS JS -->
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
     <script>
       tsParticles.load("tsparticles", {
@@ -408,5 +824,6 @@
         },
       });
     </script>
+    <!-- FIN SECCION PARTICULAS JS -->
   </body>
 </html>

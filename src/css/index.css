@@ -33,3 +33,11 @@ body {
   z-index: -1;
   background: #0d0d0d; /* tu fondo oscuro */
 }
+
+.separator {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  flex-direction: column;
+  gap: 5rem;
+}

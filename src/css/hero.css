@@ -46,8 +46,8 @@
   background: rgba(193, 255, 114, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.098);
+  border-radius: 0.2rem;
   user-select: none;
 }
 .hero__info__name svg {
@@ -59,9 +59,9 @@
 .badge-tech {
   color: var(--color-secondary);
   padding: 0.1rem 1rem;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
   display: inline-block;
-  border: 2px solid rgba(193, 255, 114, 0.3);
+  border: 1px solid rgba(193, 255, 114, 0.1);
   vertical-align: middle;
   line-height: 1.2;
   font-size: 2.4rem;
@@ -89,7 +89,7 @@
   padding: 0.7rem 1.6rem;
   background: var(--color-secondary);
   border: none;
-  border-radius: 50px;
+  border-radius: 0.2rem;
   font-size: 0.95rem;
   font-family: var(--font-heading);
   font-weight: 500;
@@ -118,7 +118,7 @@
   background: var(--color-primary);
   border: none;
   color: var(--color-background);
-  border-radius: 50px;
+  border-radius: 0.2rem;
   font-size: 0.85rem;
   font-weight: 500;
   font-family: var(--font-heading);
@@ -141,7 +141,7 @@
 .hero__content__profile img {
   width: auto;
   max-height: 18rem;
-  border-radius: 50%;
+  border-bottom-right-radius: 50%;
   border: 2px solid var(--color-secondary);
   object-fit: cover;
 }
@@ -167,7 +167,7 @@
   width: 1.9rem;
   cursor: pointer;
   border: 1px solid rgba(193, 255, 114, 0.2);
-  border-radius: 0.6rem;
+  border-radius: 0.2rem;
   padding: 0.2rem;
   transition: all 0.25s ease;
 }
@@ -188,7 +188,7 @@
   padding: 0.4rem;
   background: rgba(255, 255, 255, 0.09);
   border: 1px solid rgba(193, 255, 114, 0.4);
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
   transition: 0.3s;
 }
 .hero__list__item__link:hover {

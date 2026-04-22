@@ -1,0 +1,137 @@
+.footer {
+  background: rgba(255, 255, 255, 0.098);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  padding: 2rem;
+  margin-top: 2rem;
+  color: #fff;
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  max-width: 500px;
+}
+
+.footer__logo img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.footer__description {
+  font-size: 0.9rem;
+  color: #cbd5f5;
+  line-height: 1.4;
+}
+
+.footer__nav {
+  display: flex;
+  align-items: center;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__link {
+  font-size: 0.8rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: #cbd5f5;
+  transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+  color: #38bdf8;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__social-item {
+  display: flex;
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+
+  transition: all 0.3s ease;
+}
+
+.footer__social-link img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.footer__social-link:hover {
+  transform: translateY(-5px) scale(1.1);
+  background: rgba(56, 189, 248, 0.15);
+}
+
+.footer__bottom {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #1e293b;
+  text-align: center;
+}
+
+.footer__copy {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+@media (max-width: 768px) {
+  .footer__container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer__nav {
+    justify-content: center;
+  }
+
+  .footer__social {
+    justify-content: center;
+  }
+
+  .footer__brand {
+    margin: 0 auto;
+  }
+}

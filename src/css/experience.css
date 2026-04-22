@@ -7,11 +7,11 @@
   margin: 0 auto;
   padding: 4rem 1rem;
   gap: 1rem;
-  background: rgba(255, 255, 255, 0.01);
+  background: rgba(255, 255, 255, 0.098);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.095);
-  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.2rem;
 }
 
 .experience {
@@ -35,8 +35,9 @@
     #ffffff20 100%
   );
   border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 0.2rem;
   padding: 2rem;
-  border-radius: 1rem;
+ 
 }
 
 .experience__text__title {

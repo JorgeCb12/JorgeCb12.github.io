@@ -1,10 +1,12 @@
+const isMobile = window.innerWidth < 768;
+
 tsParticles.load("tsparticles", {
   background: {
-    color: "0c1020",
+    color: "#0c1020",
   },
   particles: {
     number: {
-      value: 50,
+      value: isMobile ? 20 : 50,
     },
     color: {
       value: "#c1ff72",

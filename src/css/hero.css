@@ -87,7 +87,7 @@
   background: var(--color-secondary);
   border: none;
   border-radius: 0.2rem;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-family: var(--font-heading);
   font-weight: 500;
   cursor: pointer;
@@ -116,7 +116,7 @@
   border: none;
   color: var(--color-background);
   border-radius: 0.2rem;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 500;
   font-family: var(--font-heading);
 }
@@ -275,14 +275,11 @@
   }
   .btn__cta__contact {
     padding: 0.5rem 1.2rem;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
   }
   .btn__cta__contact svg {
     width: 1rem;
     height: 1rem;
-  }
-  .hero__content__profile {
-    padding: 10px;
   }
   .profile__wrapper {
     width: 250px;
@@ -295,7 +292,6 @@
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
     padding: 0 1rem;
   }
   .hero__info {
@@ -303,7 +299,10 @@
     text-align: center;
   }
   .hero__info h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+  .badge-tech {
+    font-size: 1.4rem;
   }
   .hero__info__name {
     font-size: 1rem;
@@ -312,8 +311,20 @@
   .hero__info__description {
     display: none;
   }
-  .badge-tech {
-    font-size: 2rem;
+
+  .hero__content__profile {
+    margin: 1rem 0;
+  }
+  .profile__wrapper {
+    width: 220px;
+    height: 250px;
+  }
+  .btn__cta {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .btn__cta__contact {
+    display: none;
   }
 }
 

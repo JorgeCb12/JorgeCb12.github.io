@@ -16,15 +16,15 @@
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
     <!-- ARCHIVOS DE ESTILOS -->
-    <link rel="stylesheet" href="/src/css/index.css" />
-    <link rel="stylesheet" href="/src/css/header.css" />
-    <link rel="stylesheet" href="/src/css/hero.css" />
-    <link rel="stylesheet" href="/src/css/about.css" />
-    <link rel="stylesheet" href="/src/css/skills.css" />
-    <link rel="stylesheet" href="/src/css/experience.css" />
-    <link rel="stylesheet" href="/src/css/contact.css" />
-    <link rel="stylesheet" href="/src/css/projects.css" />
-    <link rel="stylesheet" href="/src/css/footer.css" />
+    <link rel="stylesheet" href="src/css/index.css" />
+    <link rel="stylesheet" href="src/css/header.css" />
+    <link rel="stylesheet" href="src/css/hero.css" />
+    <link rel="stylesheet" href="src/css/about.css" />
+    <link rel="stylesheet" href="src/css/skills.css" />
+    <link rel="stylesheet" href="src/css/experience.css" />
+    <link rel="stylesheet" href="src/css/contact.css" />
+    <link rel="stylesheet" href="src/css/projects.css" />
+    <link rel="stylesheet" href="src/css/footer.css" />
     <!-- ICONOS -->
     <link
       rel="shortcut icon"
@@ -34,6 +34,19 @@
     <title>Portafolio | Jorgecb</title>
   </head>
   <body>
+    <div id="welcome-modal" class="modal-overlay">
+      <div class="modal-content notification-top">
+        <div class="modal-header">
+          <span class="pulse-icon"></span>
+          <h3>System Notification</h3>
+        </div>
+        <p>
+          ¡Bienvenido! Explora mis proyectos y habilidades. Si tienes dudas,
+          contáctame.
+        </p>
+        <button id="close-modal" class="modal-btn">Continuar</button>
+      </div>
+    </div>
     <!-- SECCION HEADER -->
     <header class="header">
       <div class="header__container">
@@ -43,12 +56,12 @@
         <div class="menu__hamburguer">
           <button class="open-menu">
             <svg
+              class="icon-menu"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="2"
               stroke="currentColor"
-              class="size-6"
             >
               <path
                 stroke-linecap="round"
@@ -56,24 +69,39 @@
                 d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
               />
             </svg>
+
+            <svg
+              class="icon-close"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
           </button>
         </div>
         <nav class="navbar" aria-label="Menú principal">
           <ul class="navbar__list">
             <li class="navbar__item">
-              <a class="navbar__link" href="#">Inicio</a>
+              <a class="navbar__link" href="#home">Inicio</a>
             </li>
             <li class="navbar__item">
-              <a class="navbar__link" href="#">Sobre mí</a>
+              <a class="navbar__link" href="#about">Sobre mí</a>
             </li>
             <li class="navbar__item">
-              <a class="navbar__link" href="#">Experiencia</a>
+              <a class="navbar__link" href="#experience">Experiencia</a>
             </li>
             <li class="navbar__item">
-              <a class="navbar__link" href="#">Proyectos</a>
+              <a class="navbar__link" href="#projects">Proyectos</a>
             </li>
             <li class="navbar__item">
-              <a class="navbar__link" href="#">Contacto</a>
+              <a class="navbar__link" href="#contact">Contacto</a>
             </li>
           </ul>
           <div class="cta__button">
@@ -110,7 +138,7 @@
       <!-- -------------- -->
 
       <!-- SECCION HERO -->
-      <section class="hero__container">
+      <section class="hero__container" id="home">
         <article class="hero__info">
           <p class="hero__info__name">
             <svg
@@ -189,7 +217,7 @@
         <article class="hero__content">
           <div class="hero__content__profile">
             <div class="profile__wrapper">
-              <img src="/public/img/FotoPerfil.webp" alt="Foto de perfil" />
+              <img src="public/img/FotoPerfil.webp" alt="Foto de perfil" />
             </div>
           </div>
           <div class="hero__content__list">
@@ -247,7 +275,7 @@
 
       <section class="separator">
         <!-- SECCION SOBRE MÍ -->
-        <section class="about__container">
+        <section class="about__container" id="about">
           <section class="about__container__text">
             <article class="about__text">
               <h2>SOBRE MÍ</h2>
@@ -402,7 +430,7 @@
         <!-- FIN SECCION SOBRE MÍ -->
 
         <!-- SECCION EXPERIENCIA -->
-        <section class="experience__container">
+        <section class="experience__container" id="experience">
           <h2>EXPERIENCIA</h2>
           <section class="experience">
             <article class="experience__text">
@@ -580,7 +608,7 @@
         <!-- FIN SECCION EXPERIENCIA -->
 
         <!-- SECCION PROYECTOS -->
-        <section class="project__container">
+        <section class="project__container" id="projects">
           <h2>Proyectos</h2>
 
           <div class="project__list">
@@ -602,12 +630,17 @@
               <div class="project-wrapper">
                 <ul class="project__link">
                   <li>
-                    <a href="#"
+                    <a
+                      href="https://github.com/JorgeCb12/portfolioJorgeCb"
+                      target="_blank"
                       ><img src="public/icons/Github.svg" alt="GitHub"
                     /></a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a
+                      href="https://portfolio-jorgecb.vercel.app/"
+                      target="_blank"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -653,12 +686,16 @@
               <div class="project-wrapper">
                 <ul class="project__link">
                   <li>
-                    <a href="#"
+                    <a
+                      href="https://github.com/JorgeCb12/invoice-flow-landing"
+                      target="_blank"
                       ><img src="public/icons/Github.svg" alt="GitHub"
                     /></a>
                   </li>
                   <li>
-                    <a href="#"
+                    <a
+                      href="https://invoice-flow-landing.vercel.app/"
+                      target="_blank"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -687,30 +724,34 @@
             </article>
 
             <!-- 3. SAAS FREELANCE -->
-            <article class="project__item">
+            <article class="project__item project__item--disabled">
               <div class="img__container">
+                <span class="project__badge">Coming Soon</span>
                 <img
                   src="public/img/dashboard.webp"
                   loading="lazy"
                   alt="Dashboard SaaS"
                 />
               </div>
-
               <h3>SaaS Freelance</h3>
               <p>
                 Dashboard administrativo para gestión de servicios freelance con
-                interfaz intuitiva y análisis de datos.
+                interfaz intuitiva.
               </p>
               <div class="project-wrapper">
                 <ul class="project__link">
                   <li>
-                    <a href="#"
+                    <a href="#" aria-label="GitHub"
                       ><img src="public/icons/Github.svg" alt="GitHub"
                     /></a>
                   </li>
                   <li>
-                    <a href="#"
-                      ><svg
+                    <a
+                      href="javascript:void(0)"
+                      class="link-disabled"
+                      aria-label="Demo coming soon"
+                    >
+                      <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -727,8 +768,6 @@
                     </a>
                   </li>
                 </ul>
-
-                <!-- TECNOLOGÍAS -->
                 <div class="project__tech">
                   <i class="devicon-react-original colored"></i>
                   <i class="devicon-tailwindcss-original colored"></i>
@@ -737,9 +776,12 @@
               </div>
             </article>
 
+            <!-- REPLICA LO MISMO PARA EL 4, 5 y 6 agregando la clase 'project__item--disabled' y el span 'project__badge' -->
+
             <!-- 4. TASK MANAGER -->
-            <article class="project__item">
+            <article class="project__item project__item--disabled">
               <div class="img__container">
+                <span class="project__badge">Coming Soon</span>
                 <img
                   src="public/img/TaskManagerApp.webp"
                   alt="Gestor de tareas"
@@ -789,8 +831,9 @@
             </article>
 
             <!-- 5. WEATHER DASHBOARD -->
-            <article class="project__item">
+            <article class="project__item project__item--disabled">
               <div class="img__container">
+                <span class="project__badge">Coming Soon</span>
                 <img
                   src="public/img/WeatherDashboard.webp"
                   alt="Dashboard del clima"
@@ -840,8 +883,9 @@
             </article>
 
             <!-- 6. CALCULADORA -->
-            <article class="project__item">
+            <article class="project__item project__item--disabled">
               <div class="img__container">
+                <span class="project__badge">Coming Soon</span>
                 <img
                   src="public/img/calculatorApp.webp"
                   alt="Calculadora en Python"
@@ -894,7 +938,7 @@
         <!-- FIN SECCION PROYECTOS -->
 
         <!-- SECCION CONTACTO -->
-        <section class="contact" id="contacto">
+        <section class="contact" id="contact">
           <div class="contact__container">
             <h2 class="contact__title">Trabajemos juntos</h2>
             <p class="contact__description">
@@ -1085,8 +1129,8 @@
 
     <!-- SECCION PARTICULAS JS -->
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
-    <script src="/js/particles.js"></script>
-    <script src="/js/app.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
     <!-- FIN SECCION PARTICULAS JS -->
   </body>
 </html>
